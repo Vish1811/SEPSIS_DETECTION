@@ -94,6 +94,11 @@ To get more details about SEPSIS visit our Telegram Bot <a href="https://develop
 Python,PHP,Telegram API
 
 ### Detection
+This is how our System Works.
+![Playgrounds](./detection.png)
+#### flowcharts
+![Playgrounds](./usecasediagram.png)
+
 ### Notification
 ### Documentation
 ### Future Scope
