@@ -100,10 +100,39 @@ This is how our System Works.
 ![Playgrounds](./usecasediagram.png)
 
 ### Notification
+1. Our website provide a notification section to express alerts if the prediction for sepsis label is found positive.
+2. a Separate user-interface will be designed using python library for triggering Alerts to the Hospital Staff.
 ### Documentation
+1. We created a well docomented code with stepwise pathway for easy understanding.
+2. PPT for the Presentation of the Idea.
 ### Future Scope
+1. More efficient Algorithms can be used for prediction of SEPSIS.
 ### Contributing
+<table>
+<img src="https://via.placeholder.com/78x78.png/3498db/fff?text=M[0]" align="left" vspace="10">
+<img src="https://via.placeholder.com/78x78.png/3498db/fff?text=M[1]" align="left" vspace="10">
+<img src="https://via.placeholder.com/78x78.png/c0392b/fff?text=S[0]" align="left" vspace="10">
+<img src="https://via.placeholder.com/78x78.png/c0392b/fff?text=S[1]" align="left" vspace="10">
+<img src="https://via.placeholder.com/78x78.png/c0392b/fff?text=S[2]" align="left" vspace="10">
+<img src="https://via.placeholder.com/78x78.png/27ae60/fff?text=L[0]" align="left" vspace="10">
+</table>
+<a href="https://github.com/Vish1811">Vishnu Kumar</a> 
+<a href="https://github.com/sonuverma1">Sonu Verma</a> 
+<a href="https://github.com/shre-ya">Aditi Shreya</a> 
+<a href="https://github.com/Piyush490">Piyush Agarwal</a> 
+<a href="https://github.com/niimmii">Namrata Gupta</a> 
+<a href="https://github.com/aanchal269">Aanchal Singh</a> 
+
+
+> **Disclaimer**: All arrays mentioned in this section must exist for the examples to work.
+
 ### References
+1. https://www.physionet.org/content/challenge-2019/1.0.0/
+2. https://www.datacamp.com/community/tutorials/decision-tree-classification-python
+3. https://towardsdatascience.com/using-bagging-and-boosting-to-improve-classification-tree-accuracy-6d3bb6c95e5b
+4. https://towardsdatascience.com/early-detection-of-sepsis-using-physiological-data-78d5f31fab9d
+5. https://iopscience.iop.org/article/10.1088/1757-899X/428/1/012004
 ### License
 ### Special Thanks
+To our Seniors who provided us guidance at necesscary point of time.
 
