@@ -62,12 +62,37 @@ Know more on our website
 ### Effects
 Know more on our website
 ### Awareness
-***
+As Awareness is a very important aspect for preventing the spread of any disease.We aim to spread  awareness in two ways:
+1. Through a Website
+2. Through a Telegram Bot
 #### website
+***
 ![Playgrounds](./gif1.gif)
 
 To get more details about SEPSIS visit our website <a href="https://developer.apple.com/swift/blog/?id=35">ABHIGYATA</a> 
 ***
+#### Features of website
+1. Covers all the important aspects regarding <strong>Prevention and Symptoms</strong>
+2. <strong>ML prediction Model</strong> is integrated with it that will do the task of early Detection of SEPSIS using the SOFA Score.
+3. Training Module for the employee of the Health care institutions.
+
+#### Technology USED
+HTML5,CSS,BOOTSRAP4,JAVASCRIPT,JQUERY,PYTHON in combination with FLASK 
+
+#### Telegram Bot
+***
+![Playgrounds](./gif2.gif)
+
+To get more details about SEPSIS visit our Telegram Bot <a href="https://developer.apple.com/swift/blog/?id=35">@sepsissupport</a> 
+***
+#### Why Telegram BOT?
+1. A <strong>Telegram Chatbot</strong>will be included as tool to spread Awareness.
+2. Real-Time Assistance along with Better Interaction will be provided once the chatbot gets trained enough.
+3. More people can be handled 24/7 service will be provided and only necessary queries will be forwarded to a real person.
+
+#### Technology USED
+Python,PHP,Telegram API
+
 ### Detection
 ### Notification
 ### Documentation
