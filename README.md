@@ -23,26 +23,57 @@
   * [Symptoms](#overview)
   * [Causes](#causes)
   * [Effects](#effects)
-  * [Task to do](#task to do)
-    * [Awareness](#awareness)
-    * [Detection](#detection)
-    * [Notification](#notification)
-    * [Docomentation](#ppt)
+  * [TaskToDo](#TaskToDo)
+    - [] Awareness
+    - [] Detection
+    - [] Notification
+    - [] Documentation
+  
 ### Detail
   * [Awareness](#awareness)
      * [gif](#gif)
      * [why awareness](#awareness)
-     * [TechnologyUsed](#technology used)
+     * [TechnologyUsed](#TechnologyUsed)
   * [Detection](#detection)
      * [Approach](#approach)
      * [flowchart](#flowchart)
      * [graphs](#graph)
-     * [TechnologyUsed](#technology used)
+     * [TechnologyUsed](#TechnologyUsed)
   * [Notification](#awareness)
      * [flowchart](#flowchart)
-     * [TechnologyUsed](#technology used)
+     * [TechnologyUsed](#TechnologyUsed)
+  * [Documentation](#Documentation)
   * [FutureScope](#futurescope)
   * [Contributing](#contributing)
   * [References](#references)
   * [License](#license)
   * [Special thanks](#special-thanks)
+
+### Introduction
+According to World Health Organisation (WHO) , “Sepsis is a potentially life-threatening organ dysfunction caused by a dysregulated host response to infection. Any type of infectious pathogen can potentially cause sepsis.”
+### Symptoms
+#### General Symptoms
+1. A fever above 101ºF (38ºC) or a temperature below 96.8ºF (36ºC)
+2. Heart rate higher than 90 beats per minute
+3. Breathing rate higher than 20 breaths per minute
+4. Probable or confirmed infection
+### Causes
+Know more on our website
+### Effects
+Know more on our website
+### Awareness
+***
+#### website
+![Playgrounds](./gif1.gif)
+
+To get more details about SEPSIS visit our website <a href="https://developer.apple.com/swift/blog/?id=35">ABHIGYATA</a> 
+***
+### Detection
+### Notification
+### Documentation
+### Future Scope
+### Contributing
+### References
+### License
+### Special Thanks
+
