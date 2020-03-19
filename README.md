@@ -1,13 +1,13 @@
 # SIH2020
 <h1 align="center">
   <br>
-   <img src="./images.jpg" alt="Sepsis Detction" title="Abhigyata" />
+   <img src="./images.jpg" alt="Sepsis Detction" title="Abhigyataa" />
   <br>
 </h1>
 <p align="center"> 
 <p align="center">
-  This repository contains the <strong>Sepsis Detection project(ABHIGYATA)</strong> source code.
-  Abhigayata is web solution made for the early dection of SEPSIS.It is the project TEAM - HEISENBUGS have done for SIH2020(Smart India Hackathon).
+  This repository contains the <strong>Sepsis Detection project(ABHIGYATAA)</strong> source code.
+  Abhigayataa is web solution made for the early dection of SEPSIS.It is the project TEAM - HEISENBUGS have done for SIH 2020(Smart India Hackathon, 2020).
 </p>
 
 # Overview
