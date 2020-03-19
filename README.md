@@ -24,10 +24,10 @@
   * [Causes](#causes)
   * [Effects](#effects)
   * [TaskToDo](#TaskToDo)
-    - * Awareness
-    - * Detection
-    - * Notification
-    - * Documentation
+     * Awareness
+     * Detection
+     * Notification
+     * Documentation
   
 ### Detail
   * [Awareness](#awareness)
@@ -97,7 +97,7 @@ HTML5 , CSS , BOOTSRAP4 , JAVASCRIPT , JQUERY , PYTHON in combination with FLASK
 To get more details about SEPSIS visit our Telegram Bot <a href="https://developer.apple.com/swift/blog/?id=35">@sepsissupport</a> 
 ***
 #### Why Telegram BOT?
-1. A <strong>Telegram Chatbot</strong>will be included as tool to spread Awareness.
+1. A <strong>Telegram Chatbot</strong> will be included as tool to spread Awareness.
 2. Real-Time Assistance along with Better Interaction will be provided once the chatbot gets trained enough.
 3. More people can be handled 24/7 service will be provided and only necessary queries will be forwarded to a real person.
 
