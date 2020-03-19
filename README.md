@@ -24,10 +24,10 @@
   * [Causes](#causes)
   * [Effects](#effects)
   * [TaskToDo](#TaskToDo)
-    - [] Awareness
-    - [] Detection
-    - [] Notification
-    - [] Documentation
+    - * Awareness
+    - * Detection
+    - * Notification
+    - * Documentation
   
 ### Detail
   * [Awareness](#awareness)
@@ -58,18 +58,29 @@ According to World Health Organisation (WHO) , “Sepsis is a potentially life-t
 3. Breathing rate higher than 20 breaths per minute
 4. Probable or confirmed infection
 ### Causes
-Know more on our website
+1. Kidney infection
+2. Abdominal infection
+3. Meningitis
+4. Cellulitis
+5. Pneumonia
 ### Effects
-Know more on our website
+1. Adults 65 and older
+2. Infants and children
+3. Pregnant women or women who have just given birth, had a miscarriage or had an abortion
+4. People suffering from a severe burn or physical trauma.
+5. Premature prolonged rupture of the fluid-filled membranes that surround the fetus
+6. Infection in the mother (such as chorioamnionitis)
+7. Malnutrition due to social isolation, functional limitations, poor or restricted diets, chronic disease, dementia,          depression, poor dentition, polypharmacy, and alcohol or substance abuse.
+8. Endocrine deficiency like  hypoadrenalism, hypothyroidism and hypogonadism.
 ### Awareness
 As Awareness is a very important aspect for preventing the spread of any disease.We aim to spread  awareness in two ways:
 1. Through a Website
 2. Through a Telegram Bot
-#### website
+#### WEBSITE
 ***
 ![Playgrounds](./gif1.gif)
 
-To get more details about SEPSIS visit our website <a href="https://developer.apple.com/swift/blog/?id=35">ABHIGYATA</a> 
+To get more details about SEPSIS visit our website <a href="file:///home/aanchal/Desktop/abhigyataa-website/index.html">ABHIGYATAA</a> 
 ***
 #### Features of website
 1. Covers all the important aspects regarding <strong>Prevention and Symptoms</strong>
@@ -77,9 +88,9 @@ To get more details about SEPSIS visit our website <a href="https://developer.ap
 3. Training Module for the employee of the Health care institutions.
 
 #### Technology USED
-HTML5,CSS,BOOTSRAP4,JAVASCRIPT,JQUERY,PYTHON in combination with FLASK 
+HTML5 , CSS , BOOTSRAP4 , JAVASCRIPT , JQUERY , PYTHON in combination with FLASK 
 
-#### Telegram Bot
+#### TELEGRAM BOT
 ***
 ![Playgrounds](./gif2.gif)
 
@@ -91,7 +102,7 @@ To get more details about SEPSIS visit our Telegram Bot <a href="https://develop
 3. More people can be handled 24/7 service will be provided and only necessary queries will be forwarded to a real person.
 
 #### Technology USED
-Python,PHP,Telegram API
+Python , PHP , Telegram API
 
 ### Detection
 This is how our System Works.
