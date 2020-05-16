@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SOFA Scores</title>
+        <meta name="description" content="The website will assist hospital staff in the intensive care unit (ICU)to assess the mortality risk of patients due to sepsis.">
+	<meta name="keyword" content="Assignment Two, Calculator, SOFA Score">
+        <meta name="author" content="Emily Nguyen">
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
+             <script src="js/app.js"></script>
+    </head>
+<body class="gradient">
+    <h1 id="abhi">Abhigyataa</h1>
+<div class="detail_screen box-shadow">
+<h1> SOFA Score</h1>
+
+<h2>Patient Details</h2>
+    <!--THIS IS THE PATIENT DETAIL FORM -->
+<form name="patient_detail" action="page3.html" method="GET" onsubmit="return validateForm()">
+<div id="NHI_Box">
+<label for="NHI">	National Health Index (NHI) Number </label> 
+<input type="text" class="form_textbox" id="NHI" name="NHI" maxlength="7"  placeholder="ABC1234" required autofocus > 
+<span class="form_error_hidden" id="NHI_error"> The NHI has the following format ABC1234. It is three capitalized letters followed by 4 numbers.  </span></div>
+<div id="name">
+<label for="title">Title</label>
+<select name="title" id="title" class="form_textbox" >
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+<option value="Miss">Miss</option>
+<option value="Ms">Ms</option>
+<option value="Dr">Dr</option>
+<option value="Sir">Sir</option>
+<option value="Madam">Madam</option>
+</select>
+<label for="lname">Surname</label> 
+<input class="form_textbox" id="lname" type="text" name="lname" placeholder="Last Name" required> 
+<span class="form_error_hidden" id="lname_error"> Incorrect input. Please enter your last name. </span><br>
+<label  for="fname">Firstname </label>
+<input class="form_textbox" id="fname" type="text" name="fname" placeholder="First Name" required> 
+<span class="form_error_hidden" id="fname_error"> Incorrect input. Please enter your first name. </span>
+</div>
+<div id="address_Box">
+<label for="address"> Address</label> 
+<textarea class="form_textbox" id="address" name="address" placeholder="House 123, XYZ Street" rows="5" cols="100" required></textarea> </div>
+<input type="reset" value="Back" onclick="window.location.href='page1.html';">
+<input type="submit" value="Continue">
+</form> 
+</div>
+</body>
+</html>

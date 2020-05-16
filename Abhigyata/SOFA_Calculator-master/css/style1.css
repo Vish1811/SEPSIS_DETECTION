@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+
+
+/*TEXT STYLING*/
+body{
+font-family: 'Merriweather Sans', sans-serif;
+}
+h1{
+	text-align:center;
+}
+p{
+	line-height:1.5em;
+}
+
+nav{
+	background-color: #69b6cf;
+}
+div{
+	margin-bottom: 10px;
+}
+button{
+	margin: auto 25%;
+}
+.emphasis{
+    font-weight: bold;
+}
+
+
+/* FORM ERROR STYLING*/
+
+.form_error{
+	border: 1px solid red;
+	background-color:white;
+	color:red;
+		padding:5px 10px;
+display:block;
+margin: 10px 0;
+width: 90%;
+}
+.form_error_visible{
+	visibility:visible;
+	color:red;
+font-size:12px;
+}
+.form_error_hidden{
+	visibility: hidden;
+	font-size:5px;
+}
+.form_textbox{
+		padding:5px 10px;
+display:block;
+margin: 10px 0;
+border:none;
+background-color:#e8f4f8;
+width: 90%;
+}
+/*FORM STYLING*/
+form{
+	padding-left: 10%;
+	padding-right:10%;
+
+}
+fieldset{
+    margin: 10px 0px;
+    border: 1px solid #e8f4f8;
+}
+.current{
+    border: 2px solid rgba(125,197,223,1);
+    box-shadow: 10px 10px 10px #e8f4f8;}
+    
+button , input[type=submit],input[type=reset]{
+	margin-top: 10px;
+	width: 45%;
+	border:none;
+	border-radius: 10px;
+	color:black;
+border: 1px solid #69b6cf;
+	background-color:white;
+padding: 10px;
+margin-right: 10px;
+
+}
+button:hover, input[type=submit]:hover, input[type=reset]:hover, .active{
+background-color: #69b6cf;
+color:white;
+transition-duration:0.3s;
+}
+
+input[type=checkbox]{
+    height: 20px;
+    width: 20px;
+}
+
+
+label{
+text-align:left;
+         font-size: 14px;
+}
+input:focus, textarea:focus{
+border: 1px solid #69b6cf;
+transition-duration:0.3s;
+padding:5px 10px;
+background-color:white;
+}
+
+/*SLIDER STYLING*/
+
+.slider{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 90%;
+  height: 25px; 
+  background: #e8f4f8; 
+  outline: none; 
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+.slidercontainer{
+	display:grid;
+	grid-template-columns: auto 50px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; 
+  height: 25px;
+  background:#7dc5df; 
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; 
+  height: 25px; 
+  background: #7dc5df; 
+  cursor: pointer; 
+}
+
+.sliderVal{
+    float:right;
+}
+
+/*BOX STYLING*/
+.box-shadow{
+	margin: 30px;
+	padding: 20px;
+	box-shadow: 5px 5px 5px 5px #7dc5df;
+	background-color:white;
+}
+.gradient{
+	background: linear-gradient( rgba(0,212,255,1) 0%, rgba(125,197,223,1) 35%, rgba(2,0,36,1));
+	margin: 8% 25%;
+    height:auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*qSOFA FORM STYLING*/
+.qSOFA, .SOFA{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;	
+}
+
+/* VISIBILITY*/
+
+.hidden{
+	display:none;
+}
+.visible{
+	display:block;
+}
+
+/*THE BUTTON STYLING FOR PAGE 3 */
+
+.openBar{
+	width:100%;
+margin:0;
+padding:0;
+height: 50px;
+    font-weight: bold;
+    font-variant: small-caps;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-bottom:  20px;
+}
+
+
+.qSOFA, .SOFA{
+overflow:hidden;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.start_qSOFA:after, .start_SOFA:after {
+  content: '     \02610'; 
+  font-size: 20px;
+}
+
+.active:after {
+  content: "     \02611"; 
+}
+
+/*WARNING STYLING*/
+.red{
+    background-color:red;
+    color:white;
+}
+.green{
+   background-color:green;
+    color:white;
+}
+.yellow{
+    
+       background-color:yellow;
+
+}
+
+
+
+/* STYLING FOR SOFA FORM */
+.Hover_Effect{
+    display: block;
+    width:100%;
+      opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.Hover_Effect:hover{
+    border: 1px solid #69b6cf;
+    box-shadow: 1px 1px #7dc5df;
+    opacity: 1;
+}
+.measure{
+    height: 30px;
+        border: 1px solid #69b6cf;
+}

@@ -1,0 +1,29 @@
+body {
+	padding-top: 150px;
+}
+
+/*
+  Countdown JS Timer
+*/
+
+.is-countdown {
+	margin: 0px 5px;
+}
+
+#navBarElapsed {
+	text-align: center;
+	background-color: #fcf8e4;
+}
+
+#navBarTimeToTask {
+	text-align: center;
+	background-color: #fcf8e4;
+}
+
+/*
+  Guideline Do Not Miss Styling
+*/
+
+.do-not-miss {
+	font-size: 150%;
+}

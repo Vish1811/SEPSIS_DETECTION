@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>SOFA Scores</title>
+      <meta name="description" content="The website will assist hospital staff in the intensive care unit (ICU)to assess the mortality risk of patients due to sepsis.">
+      <meta name="keyword" content="Assignment Two, Calculator, SOFA Score">
+      <meta name="author" content="Emily Nguyen">
+      <link rel="stylesheet" type="text/css" href="css/style1.css">
+      <script src="js/app.js"></script>
+   </head>
+   <body class="gradient" onload="displayWelcome();">
+      <h1 id="abhi">Abhigyataa</h1>
+      <div class="calc_screen box-shadow">
+         <h1>SOFA Score</h1>
+         <div id="individual_details"></div>
+         <p> Click one of the option below to begin calculation</p>
+         <br>
+                  <Button type="button" class="openBar" onclick="window.location.href='page2.html';"> Back</Button> <br><br>
+         <button class="start_qSOFA openBar" onclick="openqSOFA();"> qSOFA</button>
+         <br><br>
+         <div id="qSOFA" class=" collapsible hidden">
+                   <!--THIS IS THE qSOFA CALCULATOR -->
+            <form class="Calc" name="qSOFA" >
+               <fieldset>
+                  <h4>
+                     Low Blood Pressure
+                  </h4>
+                  <p>Enter your blood pressure count </p>
+                  <div class="slidecontainer">
+                     <div id="q_pressure" >
+                        <input type="range" min="50" max="150" value="125" class="slider" id="myRange1" onchange="changeValue(1)">
+                        <div class="sliderVal" id="output1"></div>
+                     </div>
+                  </div>
+               </fieldset>
+               <fieldset>
+                  <h4>
+                     High Respiratory Rate
+                  </h4>
+                  <p> How many breaths per minutes? </p>
+                  <div class="slidecontainer">
+                     <div id="q_respiratory" >
+                        <input type="range" min="0" max="40" value="0" class="slider" id="myRange2" onchange="changeValue(2)">
+                        <div class="sliderVal" id="output2"></div>
+                     </div>
+                  </div>
+               </fieldset>
+               <fieldset>
+                  <h4>
+                     Altered Mentation   
+                  </h4>
+                  <div class="slidecontainer">
+                     <div id="q_mentation" >
+                        <input type="range" min="3" max="15" value="15" class="slider" id="myRange3" onchange="changeValue(3)">
+                        <div class="sliderVal" id="output3"></div>
+                     </div>
+                  </div>
+               </fieldset>
+               <p class="emphasis" id="total_qSOFA"></p>
+           
+               <span class="hidden" id="warning"> High risk warning!   </span>
+              <br>
+            </form>
+         </div>
+         
+         <button class="start_SOFA openBar" onclick="openSOFA();"> SOFA</button>
+         <br><br>
+         <div id="SOFA" class=" collapsible hidden">
+                 <!--THIS IS THE SOFA CALCULATOR -->
+            <form name="SOFA" class="Calc">
+               <fieldset class="Hover_Effect" onclick="enable();">
+                  <label for="respiratory" > <input type="radio"  id="respiratory" value="respiratory" name="SOFA_choice" > Respiratory System</label>
+                  <div class="hidden" id="respiratory_choice">
+                     <br>
+                     <label for="respiratory_ans"> <input type="number" name="respiratory_ans" class="measure" min="0" max="500" step="10" value="400" id="respiratory_ans">  PaO2/FiO2 (mmHg)  </label>
+                     <label for="ventilated">    <input type="checkbox" name="ventilated" id="ventilated" value="mechanically ventilated">Mechanically Venitilated
+                  </label>
+                  </div>
+               </fieldset>
+               <fieldset class="Hover_Effect" onclick="enable();">
+                  <label for="nervous" > <input name="SOFA_choice" type="radio" id="nervous" value="nervous" >  Nervous System</label>
+                  <div class="hidden" id="nervous_choice">
+                     <br>
+                     <label for="nervous_ans">Glasgow coma scale <br> <br> <input type="number" class="measure" name="nervous_ans" id="nervous_ans" min="0" max="15" value="15" step="1">  </label>
+                  </div>
+               </fieldset>
+               <fieldset class="Hover_Effect" onclick="enable();">
+                  <label for="cardiovascular" ><input name="SOFA_choice" type="radio" id="cardiovascular" value="cardiovascular" >  Cardiovascular System</label>
+                  <div class="hidden" id="cardio_choice">
+                     <br> 
+                     <label for="cardio_type">
+                        Different measurement for CardioVascular System
+                        <select name="cardio_type" class="form_textbox" id="cardio_type"  onchange="selection(this.value);">
+                           <option value="MAP">Mean arterial pressure </option>
+                           <option value="Admin">Administration of vasopressors required</option>
+                        </select>
+                     </label>
+                     <br>
+                     <div id="MAP" class="visible"><label for="cardiovascular_ans">Mean arterial pressure 
+                        <input type="number" class="measure" id="cardiovascular_ans" name="cardio_ans" min="0" max="140" step="10" value="70"></label>
+                     </div>
+                     <div id="Admin" class="hidden">
+
+                        <label for="cardiovascular_ans_ALT">   Administration of vasopressors required <br>    <br>   
+                        <input class="measure" type="number" name="cardio_ans" min="0" max="10" step="0.1"  id="cardiovascular_ans_ALT"> 
+                        </label>                        <label for="vasopressors">
+                          
+                           
+                           <select name="cardio_ans" class="measure"   id="vasopressors" >
+                              <option selected value="None"> None </option>
+                              <option value="Dopamine">Dopamine</option>
+                              <option value="Dobutamine">Dobutamine</option>
+                              <option value="Norepinephrine">Norepinephrine</option>
+                              <option value="Epinephrine">Epinephrine</option>
+                           </select>
+                        </label>
+                     </div>
+                  </div>
+               </fieldset>
+               <fieldset class="Hover_Effect" onclick="enable();">
+                  <label for="liver" ><input name="SOFA_choice" type="radio" id="liver" value="liver">  Liver </label> 
+                  <div class="hidden" id="liver_choice">
+                    <br>
+                     <label for="liver_ans">
+                        Bilirubin (mg/dl) [μmol/L]
+                        <br> <br>                  <input  class="measure" type="number" value="1" id="liver_ans" name="liver_ans" > 
+                       
+                      </label>
+     <label for="liver_measurement">
+         <select class="measure" name="liver_measurement" id="liver_measurement">
+                           <option value="mg/dl">mg/dl</option>
+                           <option value="μmol/L">μmol/L</option>
+         </select></label>
+                  </div>
+               </fieldset>
+               <fieldset class="Hover_Effect" onclick="enable();">
+                  <label for="coagulation" ><input name="SOFA_choice" type="radio" id="coagulation" value="coagulation"> Coagulation</label>
+                  <div class="hidden" id="coagulation_choice"><br>
+                     <label for="coagulation_ans">   <input type="number"  class="measure"  id="coagulation_ans" min="0" max="200" value="150" step="20"> Platelets×103/µl  </label>
+                  </div>
+               </fieldset>
+               <fieldset class="Hover_Effect" onclick="enable();">
+                  <label for="kidney" >  <input name="SOFA_choice" type="radio" id="kidney" value="kidney" > Kidney </label>
+                  <div class="hidden" id="kidney_choice">
+                     <br> 
+                     <label for="kidney_type">Different measurement for Kidney
+                        <select name="kidney_type" class="form_textbox" id="kidney_type" onchange="selection(this.value);">
+                           <option value="Creatinine">Creatinine </option>
+                           <option value="Urine">Urine output</option>
+                        </select>
+                     </label>
+                     <br>
+                     <div id="Creatinine" class="visible">
+                        <label for="kidney_ans"> <br> Creatinine (mg/dl) [μmol/L]
+                        <br>
+                        <br> <input  class="measure"  type="number" id="kidney_ans" name="kidney_ans"></label> 
+                 <label for="kidney_measurement">
+                        <select class="measure" name="kidney_measurement" id="kidney_measurement" >
+                           <option value="mg/dl">mg/dl</option>
+                           <option value="μmol/L">μmol/L</option>
+                     </select></label>
+                     </div>
+                     <div id="Urine" class="hidden" >
+                        <label for="kidney_ans_ALT"> <br> Urine Output (ml/d)
+                        <br> <input type="number" id="kidney_ans_ALT" name="kidney_ans" min="0" max="1000" value="1000" step="100"></label>
+                     </div>
+                  </div>
+               </fieldset>
+               <button type="button" onclick="calculateSOFA();">Calculate SOFA</button>
+               <div id="SOFA_total" class="hidden">
+                  <h4 id="total_SOFA">Total</h4>
+                  <span id="warning_SOFA"></span>
+               </div>
+            </form>
+         </div>
+                   
+      </div>
+   </body>
+</html>
