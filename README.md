@@ -1,4 +1,4 @@
-# SIH2020
+# SEPSIS DTECTION USING MACHINE LEARNING
 <h1 align="center">
   <br>
    <img src="./images.jpg" alt="Sepsis Detction" title="Abhigyataa" />
@@ -7,7 +7,7 @@
 <p align="center"> 
 <p align="center">
   This repository contains the <strong>Sepsis Detection project(ABHIGYATAA)</strong> source code.
-  Abhigayataa is web solution made for the early dection of SEPSIS.It is the project TEAM - HEISENBUGS have done for SIH 2020(Smart India Hackathon, 2020).
+  Abhigayataa is web solution made for the early dection of SEPSIS.It is the project TEAM - HEISENBUGS have done for SIH 2019(Smart India Hackathon, 2019).
 </p>
 
 # Overview
