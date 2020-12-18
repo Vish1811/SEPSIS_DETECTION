@@ -9,6 +9,8 @@
   This repository contains the <strong>Sepsis Detection project(ABHIGYATAA)</strong> source code.
   Abhigayataa is web solution made for the early dection of SEPSIS.It is the project TEAM - HEISENBUGS have done for SIH 2019(Smart India Hackathon, 2019).
 </p>
+# LIVE
+<a href="https://vish1811.github.io/SepsisDetectionWebsite/">Visit Live Site</a> 
 
 # Overview
 1. The goal of this Challenge is the early detection of sepsis using physiological data. 
